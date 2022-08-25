@@ -1,6 +1,6 @@
 <div id="cadastro">
         <form method="post" action=""> 
-          <h1>Cadastro</h1> 
+          <h1>Efetuar Registro</h1> 
           
           <p> 
             <label for="nome_cad">Nome Completo</label>
@@ -11,6 +11,13 @@
             <label for="nasc_cad">Data de Nascimento</label>
             <input id="nasc_cad" name="nasc_cad" required="required" type="text" placeholder="dd/mm/aaaa" /> 
           </p>
+
+          <label for="Genero">Gênero</label>
+<select id="genero" name="genero">
+  <option value="Masculino">Masculino</option>
+  <option value="Feminino">Feminino</option>
+  <option value="Outros">Outros</option>
+</select>
 
           <p> 
             <label for="email_cad">E-Mail</label>
@@ -36,11 +43,16 @@
             <label for="senha_cad">Senha</label>
             <input id="senha_cad" name="senha_cad" required="required" type="password" />
           </p>
+
+          <label for="Fumante">Fumante</label>
+<select id="fumante" name="fumante">
+  <option value="sim">Sim</option>
+  <option value="nao">Não</option>
+</select>
           
           <p> 
             <input type="submit" value="Cancelar"/>
             <input type="submit" value="Cadastrar"/> 
-            
 
           </p>
         </form>
